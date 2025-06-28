@@ -1,4 +1,3 @@
-
 name: Deploy Silvanus site
 
 on:
@@ -19,4 +18,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
-
+          publish_branch: gh-pages
