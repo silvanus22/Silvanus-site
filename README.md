@@ -1,4 +1,4 @@
-name: GitHub Pages Deploy
+name: Deploy Silvanus site
 
 on:
   push:
@@ -16,6 +16,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
 
